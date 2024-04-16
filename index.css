@@ -1,0 +1,80 @@
+@font-face {
+    font-family : 'Butler Stencil';
+    src: url();
+  }
+
+  @font-face {
+    font-family : 'Candara';
+    src: url();
+  }
+
+
+
+
+* {
+    color: white;
+    text-align: center;
+}
+
+body {
+    font-family : 'Butler Stencil';
+    background-image: url(/images/background-web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+nav {
+    position: relative;
+    left: 40%;
+    top: 0;
+}
+
+
+li {
+    font-family : 'Candara';
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-right: 16px;
+    list-style: none;
+    /* display: inline-block; */
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+h1 {
+    font-size : 4.8rem;
+}
+
+
+p {
+    font-size : 3rem;
+}
+
+
+hr {
+    width: 25%;
+    color: white;
+}
+
+#skills {
+    letter-spacing: 0.7rem;
+    margin: 60px 0;
+    font-size: 2.5rem;
+}
+
+
+button {
+    border: none;
+    background-color: white;
+    padding: 20px 32px;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: #534741;
+    font-family : 'Candara';
+    font-weight: 700;
+}
