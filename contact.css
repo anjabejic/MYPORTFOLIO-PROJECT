@@ -27,17 +27,29 @@ nav {
   top: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 li {
   font-family: "Candara";
   font-size: 1.7rem;
   font-weight: 400;
-  margin-right: 16px;
   list-style: none;
   display: inline-block;
+  color: #534741;
 }
 
-a {
+#nav-button {
+  background-color: white;
   text-decoration: none;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#nav-button:hover {
+  box-shadow: rgba(0, 0, 0, 0.29) 10px 10px;
+  cursor: pointer;
 }
 
 /* ------------- EMAIL SECTION ------------- */
@@ -250,8 +262,12 @@ a {
 
 .contact-info {
 	font-size: 1.5rem;
-	letter-spacing: 0.3rem;
+	letter-spacing: 0.2rem;
 	font-weight: 700;
+}
+
+.contact-info i {
+  padding-right: 5px;
 }
 
 /* ------------- SKILLS SECTION ------------- */
