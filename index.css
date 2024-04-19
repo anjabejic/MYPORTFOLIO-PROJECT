@@ -1,80 +1,178 @@
 @font-face {
-    font-family : 'Butler Stencil';
-    src: url();
-  }
+  font-family: "Butler Stencil";
+  src: url();
+}
 
-  @font-face {
-    font-family : 'Candara';
-    src: url();
-  }
-
-
-
+@font-face {
+  font-family: "Candara";
+  src: url();
+}
 
 * {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
 }
 
 body {
-    font-family : 'Butler Stencil';
-    background-image: url(/images/background-web.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  
+  font-family: "Butler Stencil";
+  background-image: url(/images/background-web.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 nav {
-    position: relative;
-    left: 40%;
-    top: 0;
+  position: relative;
+  left: 40%;
+  top: 0;
 }
 
-
 li {
-    font-family : 'Candara';
-    font-size: 1.7rem;
-    font-weight: 400;
-    margin-right: 16px;
-    list-style: none;
-    /* display: inline-block; */
-    display: none;
+  font-family: "Candara";
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-right: 16px;
+  list-style: none;
+  /* display: inline-block; */
+  display: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
+/* ------------- INTRODUCTION SECTION ------------- */
 
 h1 {
-    font-size : 4.8rem;
+  font-size: 4.8rem;
 }
-
 
 p {
-    font-size : 3rem;
+  font-size: 3rem;
 }
-
 
 hr {
-    width: 25%;
-    color: white;
+  width: 25%;
+  color: white;
 }
-
-#skills {
-    letter-spacing: 0.7rem;
-    margin: 60px 0;
-    font-size: 2.5rem;
-}
-
 
 button {
-    border: none;
-    background-color: white;
-    padding: 20px 32px;
-    font-size: 1.7rem;
-    cursor: pointer;
-    color: #534741;
-    font-family : 'Candara';
-    font-weight: 700;
+  border: none;
+  background-color: white;
+  padding: 20px 32px;
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: #534741;
+  font-family: "Candara";
+  font-weight: 700;
+}
+
+/* ------------- MY WORK/CARDS SECTION ------------- */
+
+#my-work {
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin-right: 20px;
+  width: 300px;
+  height: 254px;
+  background: lightgrey;
+  overflow: hidden;
+  display: flex;
+}
+
+.circles,
+.browser {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.circles {
+  width: 20%;
+  gap: 8px;
+  padding: 10px;
+}
+
+.c {
+  width: 09px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: inset 2px 2px 5px rgba(235, 235, 235, 0.356);
+}
+
+.c:first-child {
+  background-color: red;
+}
+
+.c:nth-child(2) {
+  background-color: rgb(204, 167, 4);
+}
+
+.c:last-child {
+  background-color: green;
+}
+
+.browser {
+  width: 80%;
+  padding: 5px;
+  display: flex;
+  gap: 10px;
+}
+
+.chevrons {
+  display: flex;
+}
+
+.search-bar {
+  background-color: whitesmoke;
+  position: relative;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color:gray;
+  box-shadow: inset 2px 2px 2px #05050525;
+  font-weight: 700;
+}
+
+.search-bar svg {
+  position: absolute;
+  left: 10px;
+}
+
+#recipe-page {
+  background: url(/images/recipe-page-preview.jpg);
+  background-size: cover;
+}
+
+#read-up {
+  background: url(/images/read-up-page-preview.jpg);
+  background-size: cover;
+}
+
+#hardcover {
+  background: url(/images/hard-cover-page-preview.jpg);
+  background-size: auto;
+}
+
+#future-client-site {
+  background: url(/images/client-site-loading-page.jpg);
+  background-size: auto;
+}
+
+/* ------------- SKILLS SECTION ------------- */
+
+#skills {
+  letter-spacing: 1.5rem;
+  font-size: 2.5rem;
+  position: relative;
+  bottom: 0;
 }
