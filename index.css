@@ -20,25 +20,6 @@ body {
   background-size: cover;
 }
 
-nav {
-  position: relative;
-  left: 40%;
-  top: 0;
-}
-
-li {
-  font-family: "Candara";
-  font-size: 1.7rem;
-  font-weight: 400;
-  margin-right: 16px;
-  list-style: none;
-  /* display: inline-block; */
-  display: none;
-}
-
-a {
-  text-decoration: none;
-}
 
 /* ------------- INTRODUCTION SECTION ------------- */
 
