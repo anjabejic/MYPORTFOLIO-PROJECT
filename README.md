@@ -1,6 +1,6 @@
 # MY PORTFOLIO PROJECT
-This site was made as a project for codecademy.
-Point of the project was to practice everything we learned so far and help us make our first portfolio site.
+This site was made as a project for Codecademy.
+Point of the project was to practice everything we learned so far and to help us make our first portfolio site.
 
 ## Table of contents
 
