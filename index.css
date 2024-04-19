@@ -55,7 +55,7 @@ hr {
   color: white;
 }
 
-button {
+#contact-link-button {
   border: none;
   background-color: white;
   padding: 20px 32px;
@@ -64,7 +64,13 @@ button {
   color: #534741;
   font-family: "Candara";
   font-weight: 700;
+  border-radius: 30px;
 }
+
+#contact-link-button:hover {
+  box-shadow: rgba(0, 0, 0, 0.29) 10px 10px;
+}
+
 
 /* ------------- MY WORK/CARDS SECTION ------------- */
 
