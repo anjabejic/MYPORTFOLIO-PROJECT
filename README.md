@@ -12,13 +12,13 @@ Point of the project was to practice everything we learned so far and to help us
 ### Screenshot
 
 
-![Desktop View]
-![Mobile View]
+![Desktop View]()
+![Mobile View]()
 
 
 ### Links
 
-- Live Site URL: 
+- Live Site URL: https://anjabejic.github.io/MYPORTFOLIO-PROJECT/
 
 
 ## Author
