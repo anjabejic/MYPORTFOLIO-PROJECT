@@ -1,23 +1,22 @@
 @font-face {
   font-family: "Butler Stencil";
   src: url(./fonts/Butler_Stencil/Butler_Black_Stencil.otf),
-  url(./fonts/Butler_Stencil/Butler_Bold_Stencil.otf),
-  url(./fonts/Butler_Stencil/Butler_ExtraBold_Stencil.otf),
-  url(./fonts/Butler_Stencil/Butler_Light_Stencil.otf),
-  url(./fonts/Butler_Stencil/Butler_Medium_Stencil.otf),
-  url(./fonts/Butler_Stencil/Butler_Regular_Stencil.otf),
-  url(./fonts/Butler_Stencil/Butler_Ultra_Light_Stencil.otf);
+    url(./fonts/Butler_Stencil/Butler_Bold_Stencil.otf),
+    url(./fonts/Butler_Stencil/Butler_ExtraBold_Stencil.otf),
+    url(./fonts/Butler_Stencil/Butler_Light_Stencil.otf),
+    url(./fonts/Butler_Stencil/Butler_Medium_Stencil.otf),
+    url(./fonts/Butler_Stencil/Butler_Regular_Stencil.otf),
+    url(./fonts/Butler_Stencil/Butler_Ultra_Light_Stencil.otf);
 }
 
 @font-face {
   font-family: "Candara";
   src: url(./fonts/candara-font-family/aquarion.otf),
-  url(./fonts/candara-font-family/Candara.ttf),
-  url(./fonts/candara-font-family/Candara_Bold.ttf),
-  url(./fonts/candara-font-family/Candara_Bold_Italic.ttf),
-  url(./fonts/candara-font-family/Candara_Italic.ttf);
+    url(./fonts/candara-font-family/Candara.ttf),
+    url(./fonts/candara-font-family/Candara_Bold.ttf),
+    url(./fonts/candara-font-family/Candara_Bold_Italic.ttf),
+    url(./fonts/candara-font-family/Candara_Italic.ttf);
 }
-
 
 * {
   color: white;
@@ -51,7 +50,7 @@ li {
   color: #534741;
 }
 
-#nav-button {
+.nav-button {
   background-color: white;
   text-decoration: none;
   border-radius: 20px;
@@ -59,17 +58,75 @@ li {
   margin-right: 15px;
 }
 
-#nav-button:hover {
+.nav-button:hover {
   box-shadow: rgba(0, 0, 0, 0.29) 10px 10px;
   cursor: pointer;
 }
 
+/* ------------- MOBILE NAV ------------- */
+
+#mobile-dropdown {
+  display: none;
+}
+
+ /* Style the navigation menu */
+ .topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  font-family: "Candara";
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+} 
+
+/* ------------- INTRODUCTION SECTION ------------- */
 h1 {
   font-size: 2rem;
   line-height: 3rem;
 }
 
 /* ------------- EMAIL SECTION ------------- */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .form {
   display: flex;
@@ -80,7 +137,7 @@ h1 {
   background-color: #fff;
   padding: 30px;
   border-radius: 10px;
-  margin: 5% 0 5% 33%;
+  margin-bottom: 50px;
   font-size: 1.45rem;
 }
 
@@ -278,9 +335,9 @@ h1 {
 }
 
 .contact-info {
-	font-size: 1.5rem;
-	letter-spacing: 0.2rem;
-	font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
 }
 
 .contact-info i {
@@ -295,4 +352,32 @@ h1 {
   font-size: 2.5rem;
   position: relative;
   bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    background-image: url(./images/background-mobile.jpg);
+  }
+
+
+  h1 {
+    margin-top: 15%;
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+  }
+
+  #desktop-nav {
+    display: none;
+  }
+
+  #mobile-dropdown {
+    display: contents;
+  }
+  
+  #skills {
+    font-size: 2rem;
+  }
+
+
 }

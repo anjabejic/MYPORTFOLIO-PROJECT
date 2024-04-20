@@ -12,79 +12,99 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="contact.js"></script>
   </head>
 
   <body>
-
     <!-- NAVIGATION -->
 
-    <nav>
+    <nav id="desktop-nav">
       <ul>
         <a href="index.html">
-          <button id="nav-button">
+          <button class="nav-button">
             <li>HOME</li>
           </button>
         </a>
 
         <a href="index.html#my-work">
-          <button id="nav-button">
+          <button class="nav-button">
             <li>MY WORK</li>
           </button>
         </a>
       </ul>
     </nav>
 
+    <!-- MOBILE NAVIGATION -->
 
+   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-      <!--------------- EMAIL SECTION -------------  -->
-      <div class="container">
+<!-- Top Navigation Menu -->
+<div class="topnav" id="mobile-dropdown">
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="index.html">Home</a>
+    <a href="index.html#my-work">My work</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div> 
 
-    <h1>Thank you for taking the time to reach out. <br>
-      What can I do for you? :)</h1>
+    <!--------------- EMAIL SECTION -------------  -->
+    <div class="container">
+      <h1>
+        Thank you for taking the time to reach out. <br />
+        What can I do for you? :)
+      </h1>
 
       <form class="form">
-    
         <div class="flex">
-            <label>
-                <input required="" placeholder="" type="text" class="input">
-                <span>first name</span>
-            </label>
-    
-            <label>
-                <input required="" placeholder="" type="text" class="input">
-                <span>last name</span>
-            </label>
-        </div>  
-                
+          <label>
+            <input required="" placeholder="" type="text" class="input" />
+            <span>first name</span>
+          </label>
+
+          <label>
+            <input required="" placeholder="" type="text" class="input" />
+            <span>last name</span>
+          </label>
+        </div>
+
         <label>
-            <input required="" placeholder="" type="email" class="input">
-            <span>email</span>
-        </label> 
-            
+          <input required="" placeholder="" type="email" class="input" />
+          <span>email</span>
+        </label>
+
         <label>
-            <input required="" type="tel" placeholder="" class="input">
-            <span>contact number</span>
+          <input required="" type="tel" placeholder="" class="input" />
+          <span>contact number</span>
         </label>
         <label>
-            <textarea required="" rows="3" placeholder="" class="input01"></textarea>
-            <span>message</span>
+          <textarea
+            required=""
+            rows="3"
+            placeholder=""
+            class="input01"
+          ></textarea>
+          <span>message</span>
         </label>
-        
+
         <button class="fancy" href="#">
           <span class="top-key"></span>
           <span class="text">submit</span>
           <span class="bottom-key-1"></span>
           <span class="bottom-key-2"></span>
         </button>
-    </form>
+      </form>
 
-<div class="contact-info">
-  
-      <i class="fa-solid fa-phone"></i>0038763385000
-  <br>
-  <br>
-      <i class="fa-solid fa-envelope"></i>bejichanja@gmail.com
-</div>
+      <div class="contact-info">
+        <i class="fa-solid fa-phone"></i>0038763385000
+        <br />
+        <br />
+        <i class="fa-solid fa-envelope"></i>bejichanja@gmail.com
+      </div>
 
       <!--------------- SKILLS SECTION -------------  -->
 
