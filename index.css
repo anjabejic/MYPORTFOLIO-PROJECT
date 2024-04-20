@@ -1,11 +1,21 @@
 @font-face {
   font-family: "Butler Stencil";
-  src: url();
+  src: url(./fonts/Butler_Stencil/Butler_Black_Stencil.otf),
+  url(./fonts/Butler_Stencil/Butler_Bold_Stencil.otf),
+  url(./fonts/Butler_Stencil/Butler_ExtraBold_Stencil.otf),
+  url(./fonts/Butler_Stencil/Butler_Light_Stencil.otf),
+  url(./fonts/Butler_Stencil/Butler_Medium_Stencil.otf),
+  url(./fonts/Butler_Stencil/Butler_Regular_Stencil.otf),
+  url(./fonts/Butler_Stencil/Butler_Ultra_Light_Stencil.otf);
 }
 
 @font-face {
   font-family: "Candara";
-  src: url();
+  src: url(./fonts/candara-font-family/aquarion.otf),
+  url(./fonts/candara-font-family/Candara.ttf),
+  url(./fonts/candara-font-family/Candara_Bold.ttf),
+  url(./fonts/candara-font-family/Candara_Bold_Italic.ttf),
+  url(./fonts/candara-font-family/Candara_Italic.ttf);
 }
 
 * {
@@ -15,7 +25,7 @@
 
 body {
   font-family: "Butler Stencil";
-  background-image: url(/images/background-web.jpg);
+  background-image: url(./images/background-web.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -32,7 +42,8 @@ h1 {
 }
 
 p {
-  font-size: 3rem;
+  font-size: 2.6rem;
+  line-height: 3.6rem;
 }
 
 hr {
