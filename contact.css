@@ -27,7 +27,7 @@
 
 body {
   font-family: "Butler Stencil";
-  background-image: url(/images/background-web.jpg);
+  background-image: url(./images/background-web.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }

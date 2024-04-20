@@ -151,22 +151,22 @@ hr {
 }
 
 #recipe-page {
-  background: url(/images/recipe-page-preview.jpg);
+  background: url(./images/recipe-page-preview.jpg);
   background-size: cover;
 }
 
 #read-up {
-  background: url(/images/read-up-page-preview.jpg);
+  background: url(./images/read-up-page-preview.jpg);
   background-size: cover;
 }
 
 #hardcover {
-  background: url(/images/hard-cover-page-preview.jpg);
+  background: url(./images/hard-cover-page-preview.jpg);
   background-size: auto;
 }
 
 #future-client-site {
-  background: url(/images/client-site-loading-page.jpg);
+  background: url(./images/client-site-loading-page.jpg);
   background-size: auto;
 }
 
