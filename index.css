@@ -1,21 +1,21 @@
 @font-face {
   font-family: "Butler Stencil";
   src: url(./fonts/Butler_Stencil/Butler_Black_Stencil.otf),
-  url(./fonts/Butler_Stencil/Butler_Bold_Stencil.otf),
-  url(./fonts/Butler_Stencil/Butler_ExtraBold_Stencil.otf),
-  url(./fonts/Butler_Stencil/Butler_Light_Stencil.otf),
-  url(./fonts/Butler_Stencil/Butler_Medium_Stencil.otf),
-  url(./fonts/Butler_Stencil/Butler_Regular_Stencil.otf),
-  url(./fonts/Butler_Stencil/Butler_Ultra_Light_Stencil.otf);
+    url(./fonts/Butler_Stencil/Butler_Bold_Stencil.otf),
+    url(./fonts/Butler_Stencil/Butler_ExtraBold_Stencil.otf),
+    url(./fonts/Butler_Stencil/Butler_Light_Stencil.otf),
+    url(./fonts/Butler_Stencil/Butler_Medium_Stencil.otf),
+    url(./fonts/Butler_Stencil/Butler_Regular_Stencil.otf),
+    url(./fonts/Butler_Stencil/Butler_Ultra_Light_Stencil.otf);
 }
 
 @font-face {
   font-family: "Candara";
   src: url(./fonts/candara-font-family/aquarion.otf),
-  url(./fonts/candara-font-family/Candara.ttf),
-  url(./fonts/candara-font-family/Candara_Bold.ttf),
-  url(./fonts/candara-font-family/Candara_Bold_Italic.ttf),
-  url(./fonts/candara-font-family/Candara_Italic.ttf);
+    url(./fonts/candara-font-family/Candara.ttf),
+    url(./fonts/candara-font-family/Candara_Bold.ttf),
+    url(./fonts/candara-font-family/Candara_Bold_Italic.ttf),
+    url(./fonts/candara-font-family/Candara_Italic.ttf);
 }
 
 * {
@@ -29,7 +29,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 /* ------------- INTRODUCTION SECTION ------------- */
 
@@ -67,17 +66,17 @@ hr {
   box-shadow: rgba(0, 0, 0, 0.29) 10px 10px;
 }
 
-
 /* ------------- MY WORK/CARDS SECTION ------------- */
 
 #my-work {
   margin: 100px 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
-  margin-right: 20px;
+  margin: 10px 20px;
   width: 300px;
   height: 254px;
   background: lightgrey;
@@ -140,7 +139,7 @@ hr {
   align-items: center;
   justify-content: center;
   font-size: 0.7rem;
-  color:gray;
+  color: gray;
   box-shadow: inset 2px 2px 2px #05050525;
   font-weight: 700;
 }
@@ -177,4 +176,42 @@ hr {
   font-size: 2.5rem;
   position: relative;
   bottom: 0;
+}
+
+/* ------------- MOBILE VERSION ------------- */
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    background-image: url(./images/background-mobile.jpg);
+  }
+  
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+
+  #contact-link-button {
+    font-size: 1.5rem;
+  }
+
+  #my-work {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    margin: 20px 20px;
+  }
+
+  #skills {
+    font-size: 2rem;
+  }
+
 }
